@@ -29,7 +29,7 @@ pipeline {
         }
         success {
           emailext(
-            to: 'your_email@deakin.edu.au',
+            to: "obrisr@gmail.com",
             subject: "Tests SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
             body: "Tests passed.\nSee attached test.log.",
             attachmentsPattern: 'test.log'
@@ -37,7 +37,7 @@ pipeline {
         }
         failure {
           emailext(
-            to: 'your_email@deakin.edu.au',
+            to: "obrisr@gmail.com",
             subject: "Tests FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
             body: "Tests failed.\nSee attached test.log.",
             attachmentsPattern: 'test.log'
@@ -72,7 +72,7 @@ pipeline {
         }
         success {
           emailext(
-            to: 'your_email@deakin.edu.au',
+            to: "obrisr@gmail.com",
             subject: "Security Scan CLEAN: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
             body: "npm audit completed successfully.\nSee attachments.",
             attachmentsPattern: 'npm-audit.*'
@@ -80,7 +80,7 @@ pipeline {
         }
         unstable {
           emailext(
-            to: 'your_email@deakin.edu.au',
+            to: "obrisr@gmail.com",
             subject: "Security Scan Issues: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
             body: "Vulnerabilities detected by npm audit.\nSee attachments.",
             attachmentsPattern: 'npm-audit.*'
@@ -88,7 +88,7 @@ pipeline {
         }
         failure {
           emailext(
-            to: 'your_email@deakin.edu.au',
+            to: "obrisr@gmail.com",
             subject: "Security Scan FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
             body: "npm audit did not run successfully.\nSee attachments.",
             attachmentsPattern: 'npm-audit.*'
