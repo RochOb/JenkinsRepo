@@ -214,3 +214,4 @@ In this application, the default `snyk wizard` answers will fix all the issues.
 When the wizard is done, restart the application and run the exploits again to confirm they are fixed.
 trigger Fri Sep  5 23:03:01 AUSEST 2025
 Triggered build for Video 1 on Fri Sep  5 23:15:55 AUSEST 2025
+Trigger Video 2 demo on Fri Sep  5 23:31:33 AUSEST 2025
